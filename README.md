@@ -1,4 +1,4 @@
-# Proyecto 1 - Sistema de Gestión de Productos
+# Proyecto 1 - Sistema de Inventario Tienda de Ropa
 
 Este repositorio contiene el desarrollo del **Proyecto 1** del curso **Introducción a la Programación y Computación 1**.  
 El proyecto consiste en una aplicación desarrollada en **Java** que permite gestionar productos mediante una interfaz gráfica.
@@ -42,6 +42,4 @@ El programa incluye las siguientes funcionalidades:
   - Ventas registradas
 - Visualizar información del estudiante.
 
----
-
-## Estructura del repositorio
+-----
