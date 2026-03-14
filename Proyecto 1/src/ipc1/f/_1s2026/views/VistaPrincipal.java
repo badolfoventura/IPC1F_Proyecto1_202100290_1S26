@@ -113,18 +113,32 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel1.setText("Menu Principal");
 
+        btmAgregar.setBackground(new java.awt.Color(0, 51, 0));
+        btmAgregar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmAgregar.setForeground(new java.awt.Color(255, 255, 255));
         btmAgregar.setText("Agregar Producto");
         btmAgregar.addActionListener(this::btmAgregarActionPerformed);
 
+        btmBuscar.setBackground(new java.awt.Color(0, 51, 153));
+        btmBuscar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmBuscar.setForeground(new java.awt.Color(255, 255, 255));
         btmBuscar.setText("Buscar Producto");
         btmBuscar.addActionListener(this::btmBuscarActionPerformed);
 
+        btmEliminar.setBackground(new java.awt.Color(153, 0, 0));
+        btmEliminar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmEliminar.setForeground(new java.awt.Color(255, 255, 255));
         btmEliminar.setText("Eliminar Producto");
         btmEliminar.addActionListener(this::btmEliminarActionPerformed);
 
+        btmRegistrar.setBackground(new java.awt.Color(255, 102, 0));
+        btmRegistrar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btmRegistrar.setText("Registrar Venta");
         btmRegistrar.addActionListener(this::btmRegistrarActionPerformed);
 
+        btmGenerarStock.setBackground(new java.awt.Color(204, 255, 204));
+        btmGenerarStock.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btmGenerarStock.setText("Generar Reporte Stock");
         btmGenerarStock.addActionListener(this::btmGenerarStockActionPerformed);
 
@@ -136,6 +150,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
         btmSalir.setText("SALIR");
         btmSalir.addActionListener(this::btmSalirActionPerformed);
 
+        btmGenerarVentas.setBackground(new java.awt.Color(255, 153, 102));
+        btmGenerarVentas.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btmGenerarVentas.setText("Generar Reporte Ventas");
         btmGenerarVentas.addActionListener(this::btmGenerarVentasActionPerformed);
 
@@ -154,6 +170,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaProductos);
 
+        txtActualizar.setBackground(new java.awt.Color(255, 255, 204));
+        txtActualizar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtActualizar.setText("Actualizar Tabla");
         txtActualizar.addActionListener(this::txtActualizarActionPerformed);
 
@@ -177,18 +195,17 @@ public class VistaPrincipal extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(btmAgregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtActualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createSequentialGroup()
+                            .addComponent(txtActualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btmSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btmSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btmDatosES, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(btmGenerarVentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(btmGenerarStock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(btmEliminar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(btmRegistrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                    .addGap(0, 0, Short.MAX_VALUE))))))
+                                        .addComponent(btmDatosES, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btmGenerarVentas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btmGenerarStock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btmEliminar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btmRegistrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

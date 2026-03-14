@@ -94,9 +94,15 @@ public class VistaAgregar extends javax.swing.JFrame {
 
         jLabel6.setText("El Codigo unico del producto se genera automaticamente.");
 
+        btmAgregar.setBackground(new java.awt.Color(51, 51, 255));
+        btmAgregar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmAgregar.setForeground(new java.awt.Color(255, 255, 255));
         btmAgregar.setText("AGREGAR");
         btmAgregar.addActionListener(this::btmAgregarActionPerformed);
 
+        btmCerrar.setBackground(new java.awt.Color(255, 51, 51));
+        btmCerrar.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        btmCerrar.setForeground(new java.awt.Color(255, 255, 255));
         btmCerrar.setText("CERRAR");
         btmCerrar.addActionListener(this::btmCerrarActionPerformed);
 
